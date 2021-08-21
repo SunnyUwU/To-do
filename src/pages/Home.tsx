@@ -4,7 +4,6 @@ import googleIconImg from "../assets/images/google.svg";
 import githubIconImg from "../assets/images/github.svg";
 import Login from "../assets/images/login.svg";
 
-import { Button } from "../components/Button";
 import "../styles/auth.scss";
 
 export function Home() {
@@ -31,10 +30,10 @@ export function Home() {
                             placeholder="Digite seu nome"
                             // value={username}
                         />
-                        <Button type="submit">
+                        <button>
                             <img src={Login} alt="Entrar" />
                             Entrar no To-do
-                        </Button>
+                        </button>
                     </form>
                 </div>
             </main>
