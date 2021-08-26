@@ -1,8 +1,8 @@
-import TodoImg from "../assets/images/TodoImg.svg";
-import Logo from "../assets/images/Logo.svg";
+import todoImg from "../assets/images/TodoImg.svg";
+import logo from "../assets/images/Logo.svg";
 import googleIconImg from "../assets/images/google.svg";
 import githubIconImg from "../assets/images/github.svg";
-import Login from "../assets/images/login.svg";
+import login from "../assets/images/login.svg";
 
 import "../styles/auth.scss";
 
@@ -10,11 +10,11 @@ export function Home() {
     return (
         <div id="page-auth">
             <aside>
-                <img src={TodoImg} alt="To-do" />
+                <img src={todoImg} alt="To-do" />
             </aside>
             <main>
                 <div className="main-content">
-                    <img src={Logo} alt="To-do" />
+                    <img src={logo} alt="To-do" />
                     <button className="button-login-with">
                         <img src={googleIconImg} alt="Google" />
                         Entrar com o Google
@@ -31,7 +31,7 @@ export function Home() {
                             // value={username}
                         />
                         <button>
-                            <img src={Login} alt="Entrar" />
+                            <img src={login} alt="Entrar" />
                             Entrar no To-do
                         </button>
                     </form>
