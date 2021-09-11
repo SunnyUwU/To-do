@@ -1,9 +1,11 @@
 import logo from "../assets/images/Logo.svg";
 import addImg from "../assets/images/plus.svg";
 
+import "../styles/todo.scss";
+
 export function Todo() {
     return (
-        <div className="todo-page">
+        <div id="todo-page">
             <header>
                 <div className="content">
                     <img src={logo} alt="To-do" />
@@ -13,8 +15,8 @@ export function Todo() {
 
             <main>
                 <div className="todo-title">
-                    <h3>Olá, Gybson!</h3>
-                    <p>Alguma tarefa para hoje?</p>
+                    <h3>Olá, Gybson!</h3> 
+                    <span>Alguma tarefa para hoje?</span>
                 </div>
 
                 <form>
@@ -22,7 +24,7 @@ export function Todo() {
                         placeholder="Adicione uma tarefa..."
                     />
 
-                    <div className="form-footer">
+                    <div className="form-button">
                         <button>
                             <img src={addImg} alt="Adicionar tarefa" />
                         </button>
