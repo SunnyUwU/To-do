@@ -1,0 +1,116 @@
+#todo-page {
+  header {
+    padding: 18px;
+    border-bottom: 1px solid #cccccc;
+
+    .content {
+      max-width: auto;
+      margin: 0 42px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      button {
+        height: 35px;
+        width: 100px;
+        border-radius: 10px;
+        overflow: hidden;
+        background: transparent;
+
+        border: 1px solid #4fc4cf;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-weight: 500;
+
+        transition: 0.3s;
+
+        &:hover {
+          border-color: #994ff3;
+        }
+      }
+
+      > img {
+        max-height: 40px;
+      }
+
+      > div {
+        display: flex;
+        gap: 16px;
+
+        button {
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  main {
+    max-width: 500px;
+    margin: 0 auto;
+
+    .todo-title {
+      margin: 32px 0;
+      display: flexbox;
+      flex-direction: column;
+
+      h3 {
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        color: #181818;
+
+        display: flex;
+        justify-content: center;
+      }
+      span {
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    form {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+
+      textarea {
+        width: 435px;
+        border: 1px solid #4fc4cf;
+        padding: 12px;
+        border-radius: 10px;
+        background: #fefefe;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+        resize: none;
+        max-height: 55px;
+      }
+
+      .form-button {
+        height: 55px;
+        width: 55px;
+        border-radius: 10px;
+        background: #4fc4cf;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+
+        transition: filter 0.3s;
+
+        > button {
+          display: flex;
+          background: transparent;
+          border: 0;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
